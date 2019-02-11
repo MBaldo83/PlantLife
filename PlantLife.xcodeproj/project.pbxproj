@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1ACE74C12212176300A9C0A5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE74C02212176300A9C0A5 /* AppCoordinator.swift */; };
+		1ACE74C32212177400A9C0A5 /* AppCoordinatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE74C22212177400A9C0A5 /* AppCoordinatorModel.swift */; };
+		1ACE74C62212184D00A9C0A5 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE74C52212184D00A9C0A5 /* Dependencies.swift */; };
+		1ACE74C922121E8900A9C0A5 /* AppCoordinator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE74C822121E8900A9C0A5 /* AppCoordinator.xib */; };
 		AAD68756220306CB00D644AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD68755220306CB00D644AE /* AppDelegate.swift */; };
 		AAD68758220306CB00D644AE /* MyPlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD68757220306CB00D644AE /* MyPlantsViewController.swift */; };
 		AAD6875B220306CB00D644AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD68759220306CB00D644AE /* Main.storyboard */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1ACE74C02212176300A9C0A5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1ACE74C22212177400A9C0A5 /* AppCoordinatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorModel.swift; sourceTree = "<group>"; };
+		1ACE74C52212184D00A9C0A5 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		1ACE74C822121E8900A9C0A5 /* AppCoordinator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCoordinator.xib; sourceTree = "<group>"; };
 		AAD68752220306CB00D644AE /* PlantLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD68755220306CB00D644AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD68757220306CB00D644AE /* MyPlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +90,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ACE74C42212180500A9C0A5 /* MyPlantsViews */ = {
+			isa = PBXGroup;
+			children = (
+				AAD68757220306CB00D644AE /* MyPlantsViewController.swift */,
+				AAD6878C2204894000D644AE /* MyPlantsCollectionViewCell.swift */,
+				AAD687882204820400D644AE /* MyPlants.swift */,
+				AAD6878A2204875100D644AE /* MyPlantsViewModel.swift */,
+			);
+			path = MyPlantsViews;
+			sourceTree = "<group>";
+		};
 		AAD68749220306CB00D644AE = {
 			isa = PBXGroup;
 			children = (
@@ -106,10 +125,11 @@
 			isa = PBXGroup;
 			children = (
 				AAD68755220306CB00D644AE /* AppDelegate.swift */,
-				AAD68757220306CB00D644AE /* MyPlantsViewController.swift */,
-				AAD6878C2204894000D644AE /* MyPlantsCollectionViewCell.swift */,
-				AAD687882204820400D644AE /* MyPlants.swift */,
-				AAD6878A2204875100D644AE /* MyPlantsViewModel.swift */,
+				1ACE74C02212176300A9C0A5 /* AppCoordinator.swift */,
+				1ACE74C22212177400A9C0A5 /* AppCoordinatorModel.swift */,
+				1ACE74C822121E8900A9C0A5 /* AppCoordinator.xib */,
+				1ACE74C52212184D00A9C0A5 /* Dependencies.swift */,
+				1ACE74C42212180500A9C0A5 /* MyPlantsViews */,
 				AAD68759220306CB00D644AE /* Main.storyboard */,
 				AAD6875C220306CC00D644AE /* Assets.xcassets */,
 				AAD6875E220306CC00D644AE /* LaunchScreen.storyboard */,
@@ -241,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ACE74C922121E8900A9C0A5 /* AppCoordinator.xib in Resources */,
 				AAD68760220306CC00D644AE /* LaunchScreen.storyboard in Resources */,
 				AAD6875D220306CC00D644AE /* Assets.xcassets in Resources */,
 				AAD6875B220306CB00D644AE /* Main.storyboard in Resources */,
@@ -268,10 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ACE74C12212176300A9C0A5 /* AppCoordinator.swift in Sources */,
 				AAD68758220306CB00D644AE /* MyPlantsViewController.swift in Sources */,
 				AAD6878D2204894000D644AE /* MyPlantsCollectionViewCell.swift in Sources */,
 				AAD687892204820400D644AE /* MyPlants.swift in Sources */,
+				1ACE74C62212184D00A9C0A5 /* Dependencies.swift in Sources */,
 				AAD6878B2204875100D644AE /* MyPlantsViewModel.swift in Sources */,
+				1ACE74C32212177400A9C0A5 /* AppCoordinatorModel.swift in Sources */,
 				AAD68756220306CB00D644AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
