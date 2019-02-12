@@ -26,3 +26,29 @@ final class AppCoordinator: UIViewController {
   }
   
 }
+
+extension AppCoordinator {
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    let myPlantsCoordinator = MyPlantsCoordinator(model: self.model)
+    
+    addChild(myPlantsCoordinator)
+    
+    myPlantsCoordinator.view.frame = CGRect(origin: .zero, size: plantsView.bounds.size)
+    
+    plantsView.addSubview(myPlantsCoordinator.view)
+    
+    NSLayoutConstraint.activate([
+      myPlantsCoordinator.view!.leadingAnchor.constraint(equalTo: plantsView.leadingAnchor, constant: 0),
+      myPlantsCoordinator.view!.topAnchor.constraint(equalTo: plantsView.topAnchor, constant: 0),
+      myPlantsCoordinator.view!.trailingAnchor.constraint(equalTo: plantsView.trailingAnchor, constant: 0),
+      myPlantsCoordinator.view!.bottomAnchor.constraint(equalTo: plantsView.bottomAnchor, constant: 0)
+      ])
+    
+    myPlantsCoordinator.didMove(toParent: self)
+    
+    
+  }
+}

@@ -11,9 +11,9 @@
 		1ACE74C32212177400A9C0A5 /* AppCoordinatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE74C22212177400A9C0A5 /* AppCoordinatorModel.swift */; };
 		1ACE74C62212184D00A9C0A5 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE74C52212184D00A9C0A5 /* Dependencies.swift */; };
 		1ACE74C922121E8900A9C0A5 /* AppCoordinator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE74C822121E8900A9C0A5 /* AppCoordinator.xib */; };
+		1ACE74CB2213631100A9C0A5 /* MyPlantsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE74CA2213631100A9C0A5 /* MyPlantsCoordinator.swift */; };
+		1ACE74CD221363F200A9C0A5 /* MyPlantsCoordinator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE74CC221363F200A9C0A5 /* MyPlantsCoordinator.xib */; };
 		AAD68756220306CB00D644AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD68755220306CB00D644AE /* AppDelegate.swift */; };
-		AAD68758220306CB00D644AE /* MyPlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD68757220306CB00D644AE /* MyPlantsViewController.swift */; };
-		AAD6875B220306CB00D644AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD68759220306CB00D644AE /* Main.storyboard */; };
 		AAD6875D220306CC00D644AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD6875C220306CC00D644AE /* Assets.xcassets */; };
 		AAD68760220306CC00D644AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD6875E220306CC00D644AE /* LaunchScreen.storyboard */; };
 		AAD68776220306CC00D644AE /* PlantLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD68775220306CC00D644AE /* PlantLifeUITests.swift */; };
@@ -46,6 +46,8 @@
 		1ACE74C22212177400A9C0A5 /* AppCoordinatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorModel.swift; sourceTree = "<group>"; };
 		1ACE74C52212184D00A9C0A5 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		1ACE74C822121E8900A9C0A5 /* AppCoordinator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCoordinator.xib; sourceTree = "<group>"; };
+		1ACE74CA2213631100A9C0A5 /* MyPlantsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsCoordinator.swift; sourceTree = "<group>"; };
+		1ACE74CC221363F200A9C0A5 /* MyPlantsCoordinator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlantsCoordinator.xib; sourceTree = "<group>"; };
 		AAD68752220306CB00D644AE /* PlantLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD68755220306CB00D644AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD68757220306CB00D644AE /* MyPlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsViewController.swift; sourceTree = "<group>"; };
@@ -94,9 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				AAD68757220306CB00D644AE /* MyPlantsViewController.swift */,
-				AAD6878C2204894000D644AE /* MyPlantsCollectionViewCell.swift */,
-				AAD687882204820400D644AE /* MyPlants.swift */,
-				AAD6878A2204875100D644AE /* MyPlantsViewModel.swift */,
 			);
 			path = MyPlantsViews;
 			sourceTree = "<group>";
@@ -129,6 +128,11 @@
 				1ACE74C22212177400A9C0A5 /* AppCoordinatorModel.swift */,
 				1ACE74C822121E8900A9C0A5 /* AppCoordinator.xib */,
 				1ACE74C52212184D00A9C0A5 /* Dependencies.swift */,
+				1ACE74CA2213631100A9C0A5 /* MyPlantsCoordinator.swift */,
+				1ACE74CC221363F200A9C0A5 /* MyPlantsCoordinator.xib */,
+				AAD6878C2204894000D644AE /* MyPlantsCollectionViewCell.swift */,
+				AAD687882204820400D644AE /* MyPlants.swift */,
+				AAD6878A2204875100D644AE /* MyPlantsViewModel.swift */,
 				1ACE74C42212180500A9C0A5 /* MyPlantsViews */,
 				AAD68759220306CB00D644AE /* Main.storyboard */,
 				AAD6875C220306CC00D644AE /* Assets.xcassets */,
@@ -262,9 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ACE74C922121E8900A9C0A5 /* AppCoordinator.xib in Resources */,
+				1ACE74CD221363F200A9C0A5 /* MyPlantsCoordinator.xib in Resources */,
 				AAD68760220306CC00D644AE /* LaunchScreen.storyboard in Resources */,
 				AAD6875D220306CC00D644AE /* Assets.xcassets in Resources */,
-				AAD6875B220306CB00D644AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,8 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ACE74CB2213631100A9C0A5 /* MyPlantsCoordinator.swift in Sources */,
 				1ACE74C12212176300A9C0A5 /* AppCoordinator.swift in Sources */,
-				AAD68758220306CB00D644AE /* MyPlantsViewController.swift in Sources */,
 				AAD6878D2204894000D644AE /* MyPlantsCollectionViewCell.swift in Sources */,
 				AAD687892204820400D644AE /* MyPlants.swift in Sources */,
 				1ACE74C62212184D00A9C0A5 /* Dependencies.swift in Sources */,
