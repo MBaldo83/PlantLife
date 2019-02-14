@@ -40,14 +40,9 @@ extension MyPlantsCoordinator {
     let nib = UINib(nibName: "MyPlantsCollectionViewCell", bundle: nil)
     collectionView.register(nib, forCellWithReuseIdentifier: "MyPlantsCollectionViewCell")
     
-//    collectionView.register(MyPlantsCollectionViewCell.self,
-//                            forCellWithReuseIdentifier: "MyPlantsCollectionViewCell")
-    
     if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
       flowLayout.estimatedItemSize = plantCellItemSize
     }
-    
-//    self.collectionView.reloadData()
     
   }
   
