@@ -13,6 +13,7 @@
 		1ACE74C922121E8900A9C0A5 /* AppCoordinator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE74C822121E8900A9C0A5 /* AppCoordinator.xib */; };
 		1ACE74CB2213631100A9C0A5 /* MyPlantsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE74CA2213631100A9C0A5 /* MyPlantsCoordinator.swift */; };
 		1ACE74CD221363F200A9C0A5 /* MyPlantsCoordinator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE74CC221363F200A9C0A5 /* MyPlantsCoordinator.xib */; };
+		1ACE74CF22155AA300A9C0A5 /* MyPlantsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE74CE22155AA300A9C0A5 /* MyPlantsCollectionViewCell.xib */; };
 		AAD68756220306CB00D644AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD68755220306CB00D644AE /* AppDelegate.swift */; };
 		AAD6875D220306CC00D644AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD6875C220306CC00D644AE /* Assets.xcassets */; };
 		AAD68760220306CC00D644AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD6875E220306CC00D644AE /* LaunchScreen.storyboard */; };
@@ -48,10 +49,9 @@
 		1ACE74C822121E8900A9C0A5 /* AppCoordinator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCoordinator.xib; sourceTree = "<group>"; };
 		1ACE74CA2213631100A9C0A5 /* MyPlantsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsCoordinator.swift; sourceTree = "<group>"; };
 		1ACE74CC221363F200A9C0A5 /* MyPlantsCoordinator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlantsCoordinator.xib; sourceTree = "<group>"; };
+		1ACE74CE22155AA300A9C0A5 /* MyPlantsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlantsCollectionViewCell.xib; sourceTree = "<group>"; };
 		AAD68752220306CB00D644AE /* PlantLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD68755220306CB00D644AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AAD68757220306CB00D644AE /* MyPlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsViewController.swift; sourceTree = "<group>"; };
-		AAD6875A220306CB00D644AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAD6875C220306CC00D644AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAD6875F220306CC00D644AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAD68761220306CC00D644AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,12 +92,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1ACE74C42212180500A9C0A5 /* MyPlantsViews */ = {
+		1ACE74D022155D8D00A9C0A5 /* MyPlants */ = {
 			isa = PBXGroup;
 			children = (
-				AAD68757220306CB00D644AE /* MyPlantsViewController.swift */,
+				AAD6878A2204875100D644AE /* MyPlantsViewModel.swift */,
+				1ACE74CA2213631100A9C0A5 /* MyPlantsCoordinator.swift */,
+				1ACE74CC221363F200A9C0A5 /* MyPlantsCoordinator.xib */,
+				AAD6878C2204894000D644AE /* MyPlantsCollectionViewCell.swift */,
+				1ACE74CE22155AA300A9C0A5 /* MyPlantsCollectionViewCell.xib */,
 			);
-			path = MyPlantsViews;
+			path = MyPlants;
+			sourceTree = "<group>";
+		};
+		1ACE74D122155DDB00A9C0A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1ACE74C52212184D00A9C0A5 /* Dependencies.swift */,
+				AAD687882204820400D644AE /* MyPlants.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1ACE74D222155DF200A9C0A5 /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1ACE74C02212176300A9C0A5 /* AppCoordinator.swift */,
+				1ACE74C22212177400A9C0A5 /* AppCoordinatorModel.swift */,
+				1ACE74C822121E8900A9C0A5 /* AppCoordinator.xib */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		1ACE74D322155E0700A9C0A5 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				1ACE74D222155DF200A9C0A5 /* AppCoordinator */,
+				1ACE74D022155D8D00A9C0A5 /* MyPlants */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		AAD68749220306CB00D644AE = {
@@ -124,17 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				AAD68755220306CB00D644AE /* AppDelegate.swift */,
-				1ACE74C02212176300A9C0A5 /* AppCoordinator.swift */,
-				1ACE74C22212177400A9C0A5 /* AppCoordinatorModel.swift */,
-				1ACE74C822121E8900A9C0A5 /* AppCoordinator.xib */,
-				1ACE74C52212184D00A9C0A5 /* Dependencies.swift */,
-				1ACE74CA2213631100A9C0A5 /* MyPlantsCoordinator.swift */,
-				1ACE74CC221363F200A9C0A5 /* MyPlantsCoordinator.xib */,
-				AAD6878C2204894000D644AE /* MyPlantsCollectionViewCell.swift */,
-				AAD687882204820400D644AE /* MyPlants.swift */,
-				AAD6878A2204875100D644AE /* MyPlantsViewModel.swift */,
-				1ACE74C42212180500A9C0A5 /* MyPlantsViews */,
-				AAD68759220306CB00D644AE /* Main.storyboard */,
+				1ACE74D322155E0700A9C0A5 /* Coordinators */,
+				1ACE74D122155DDB00A9C0A5 /* Models */,
 				AAD6875C220306CC00D644AE /* Assets.xcassets */,
 				AAD6875E220306CC00D644AE /* LaunchScreen.storyboard */,
 				AAD68761220306CC00D644AE /* Info.plist */,
@@ -268,6 +291,7 @@
 				1ACE74C922121E8900A9C0A5 /* AppCoordinator.xib in Resources */,
 				1ACE74CD221363F200A9C0A5 /* MyPlantsCoordinator.xib in Resources */,
 				AAD68760220306CC00D644AE /* LaunchScreen.storyboard in Resources */,
+				1ACE74CF22155AA300A9C0A5 /* MyPlantsCollectionViewCell.xib in Resources */,
 				AAD6875D220306CC00D644AE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,14 +361,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AAD68759220306CB00D644AE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAD6875A220306CB00D644AE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AAD6875E220306CC00D644AE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
