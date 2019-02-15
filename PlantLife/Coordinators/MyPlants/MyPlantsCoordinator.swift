@@ -10,10 +10,12 @@ import UIKit
 
 class MyPlantsCoordinator: UIViewController {
   
+  typealias Cell = MyPlantsCollectionViewCell
+  
   @IBOutlet var collectionView: UICollectionView!
   
   var plantCellItemSize: CGSize {
-    return CGSize(width: view.frame.width, height: 60)
+    return CGSize(width: view.frame.width, height: Cell.Constants.height)
   }
   
   let myPlantsViewModel: MyPlantsViewModel
@@ -37,13 +39,13 @@ extension MyPlantsCoordinator {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let nib = UINib(nibName: "MyPlantsCollectionViewCell", bundle: nil)
-    collectionView.register(nib, forCellWithReuseIdentifier: "MyPlantsCollectionViewCell")
+      collectionView.register(UINib(nibName: Cell.Constants.nibName,
+                                    bundle: nil),
+                            forCellWithReuseIdentifier: Cell.Constants.cellReuseIdentifier)
     
     if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
       flowLayout.estimatedItemSize = plantCellItemSize
     }
-    
   }
   
 }
@@ -60,7 +62,7 @@ extension MyPlantsCoordinator : UICollectionViewDataSource {
                       cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     
     guard let cell = collectionView.dequeueReusableCell(
-      withReuseIdentifier: "MyPlantsCollectionViewCell",
+      withReuseIdentifier: Cell.Constants.cellReuseIdentifier,
       for: indexPath) as? MyPlantsCollectionViewCell else {
         fatalError("Only works with MyPlantsCollectionViewCell")
     }
