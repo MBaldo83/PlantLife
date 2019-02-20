@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyPlantsCoordinator: UIViewController {
+class MyPlantsCoordinator: UIViewController, CoordinatorProtocol {
   
   typealias Cell = MyPlantsCollectionViewCell
   
@@ -83,5 +83,3 @@ extension MyPlantsCoordinator : UICollectionViewDelegateFlowLayout {
   }
   
 }
-
-

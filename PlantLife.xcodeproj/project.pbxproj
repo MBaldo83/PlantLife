@@ -14,6 +14,7 @@
 		1ACE74CB2213631100A9C0A5 /* MyPlantsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE74CA2213631100A9C0A5 /* MyPlantsCoordinator.swift */; };
 		1ACE74CD221363F200A9C0A5 /* MyPlantsCoordinator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE74CC221363F200A9C0A5 /* MyPlantsCoordinator.xib */; };
 		1ACE74CF22155AA300A9C0A5 /* MyPlantsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE74CE22155AA300A9C0A5 /* MyPlantsCollectionViewCell.xib */; };
+		1ACE74D5221D407700A9C0A5 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE74D4221D407700A9C0A5 /* CoordinatorProtocol.swift */; };
 		AAD68756220306CB00D644AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD68755220306CB00D644AE /* AppDelegate.swift */; };
 		AAD6875D220306CC00D644AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD6875C220306CC00D644AE /* Assets.xcassets */; };
 		AAD68760220306CC00D644AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD6875E220306CC00D644AE /* LaunchScreen.storyboard */; };
@@ -50,6 +51,7 @@
 		1ACE74CA2213631100A9C0A5 /* MyPlantsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsCoordinator.swift; sourceTree = "<group>"; };
 		1ACE74CC221363F200A9C0A5 /* MyPlantsCoordinator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlantsCoordinator.xib; sourceTree = "<group>"; };
 		1ACE74CE22155AA300A9C0A5 /* MyPlantsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlantsCollectionViewCell.xib; sourceTree = "<group>"; };
+		1ACE74D4221D407700A9C0A5 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		AAD68752220306CB00D644AE /* PlantLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD68755220306CB00D644AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD6875C220306CC00D644AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				1ACE74D222155DF200A9C0A5 /* AppCoordinator */,
 				1ACE74D022155D8D00A9C0A5 /* MyPlants */,
+				1ACE74D4221D407700A9C0A5 /* CoordinatorProtocol.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				AAD6878D2204894000D644AE /* MyPlantsCollectionViewCell.swift in Sources */,
 				AAD687892204820400D644AE /* MyPlants.swift in Sources */,
 				1ACE74C62212184D00A9C0A5 /* Dependencies.swift in Sources */,
+				1ACE74D5221D407700A9C0A5 /* CoordinatorProtocol.swift in Sources */,
 				AAD6878B2204875100D644AE /* MyPlantsViewModel.swift in Sources */,
 				1ACE74C32212177400A9C0A5 /* AppCoordinatorModel.swift in Sources */,
 				AAD68756220306CB00D644AE /* AppDelegate.swift in Sources */,
