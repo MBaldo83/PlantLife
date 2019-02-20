@@ -52,6 +52,7 @@
 		1ACE74CC221363F200A9C0A5 /* MyPlantsCoordinator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlantsCoordinator.xib; sourceTree = "<group>"; };
 		1ACE74CE22155AA300A9C0A5 /* MyPlantsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlantsCollectionViewCell.xib; sourceTree = "<group>"; };
 		1ACE74D4221D407700A9C0A5 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		1ACE74D7221D4ADA00A9C0A5 /* TodoList */ = {isa = PBXFileReference; lastKnownFileType = text; path = TodoList; sourceTree = "<group>"; };
 		AAD68752220306CB00D644AE /* PlantLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD68755220306CB00D644AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD6875C220306CC00D644AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,6 +136,15 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		1ACE74D6221D4AAA00A9C0A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAD6875C220306CC00D644AE /* Assets.xcassets */,
+				AAD6875E220306CC00D644AE /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		AAD68749220306CB00D644AE = {
 			isa = PBXGroup;
 			children = (
@@ -161,9 +171,9 @@
 				AAD68755220306CB00D644AE /* AppDelegate.swift */,
 				1ACE74D322155E0700A9C0A5 /* Coordinators */,
 				1ACE74D122155DDB00A9C0A5 /* Models */,
-				AAD6875C220306CC00D644AE /* Assets.xcassets */,
-				AAD6875E220306CC00D644AE /* LaunchScreen.storyboard */,
+				1ACE74D6221D4AAA00A9C0A5 /* Resources */,
 				AAD68761220306CC00D644AE /* Info.plist */,
+				1ACE74D7221D4ADA00A9C0A5 /* TodoList */,
 			);
 			path = PlantLife;
 			sourceTree = "<group>";
