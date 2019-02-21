@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Displays a list of My Plants
 class MyPlantsCoordinator: UIViewController, CoordinatorProtocol {
   
   typealias Cell = MyPlantsCollectionViewCell
@@ -22,7 +23,7 @@ class MyPlantsCoordinator: UIViewController, CoordinatorProtocol {
   
   let model: DependencyContainerProtocol
   
-  init(model: DependencyContainerProtocol = App.CoordinatorModel()) {
+  init(model: DependencyContainerProtocol) {
     self.model = model
     self.myPlantsViewModel = MyPlantsViewModel(dataSource: self.model.dependencies.myPlants)
     super.init(nibName: nil, bundle: nil)

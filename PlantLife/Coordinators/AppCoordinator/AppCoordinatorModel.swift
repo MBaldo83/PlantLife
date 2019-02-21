@@ -12,10 +12,15 @@ import Foundation
 
 extension App {
   
+  /**
+  Provides the Model and Dependencies requried For the App.
+   Retains a reference to the dependencies to provide access
+  **/
   struct CoordinatorModel: DependencyContainerProtocol {
     
     let dependencies: DependencyProviderProtocol
     
+    /// Default initialiser uses the default Dependency Container without arguments
     init(dependencies: DependencyProviderProtocol = DependencyContainer()) {
       self.dependencies = dependencies
     }

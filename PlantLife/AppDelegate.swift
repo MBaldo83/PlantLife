@@ -11,6 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+  /// Default initialiser for App Coordinator instantiates the dependencies.
   let app = AppCoordinator()
   
   var window: UIWindow?

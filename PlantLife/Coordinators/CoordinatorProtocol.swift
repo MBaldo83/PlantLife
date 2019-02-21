@@ -8,7 +8,24 @@
 
 import UIKit
 
+/// API for defining how Coordinators can compose other UIViewController subclasses.
+///
+/// Classes express conformance to this protocol, and therefore should fulfill the role
+///  of a coordinator. However, implementation of the protocol API is unnecessary as it
+///  is provided by default.
 protocol CoordinatorProtocol {
+
+  /// Add a view controller as a child of the receiver
+  /// The view controller's view will be, pinned to the edge of the target view.
+  /// This method will perform all the necessary UIViewController containment APIs.
+  ///
+  /// - See:
+  ///   - UIViewController.addChild(_:)
+  ///
+  /// - Parameters:
+  ///   - child: the child (i.e. composed) `UIViewController` instance
+  ///   - subview: a `UIView` instance which must be a descendent subview of the
+  ///      receiver's view, and which is the target view to pin the child's view.
   func add(child childViewController:UIViewController, inside targetView:UIView)
 }
 

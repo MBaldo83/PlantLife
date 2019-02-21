@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Cell used to represent an instance of MyPlant in a Collection View
 class MyPlantsCollectionViewCell: UICollectionViewCell {
   
   @IBOutlet var plantNameLabel: UILabel!

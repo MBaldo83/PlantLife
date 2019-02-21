@@ -8,11 +8,15 @@
 
 import Foundation
 
+/// Dependency Container
+/// Provides a property where the app's dependency provider can be access
 protocol DependencyContainerProtocol {
   
   var dependencies: DependencyProviderProtocol { get }
 }
 
+/// Dependency Provider
+/// Provides all the services / Dependencies that the App requires.
 protocol DependencyProviderProtocol {
   
   var myPlants: MyPlantsProtocol { get }
@@ -30,13 +34,9 @@ final class DependencyContainer: DependencyProviderProtocol {
   
   let myPlants: MyPlantsProtocol
   
-  init (
-    myPlants: MyPlantsProtocol? = nil
+  init (myPlants: MyPlantsProtocol = MyPlants()
     ) {
-    
-    let _myPlants = myPlants ?? MyPlants()
-    
-    self.myPlants = _myPlants
+    self.myPlants = myPlants
   }
   
 }
