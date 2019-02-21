@@ -664,7 +664,7 @@
 		AAD68781220306CC00D644AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8WVS4WSY7;
 				INFOPLIST_FILE = PlantLifeUITests/Info.plist;
@@ -684,7 +684,7 @@
 		AAD68782220306CC00D644AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8WVS4WSY7;
 				INFOPLIST_FILE = PlantLifeUITests/Info.plist;
