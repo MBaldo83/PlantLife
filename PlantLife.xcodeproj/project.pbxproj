@@ -15,6 +15,7 @@
 		1ACE74CD221363F200A9C0A5 /* MyPlantsCoordinator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE74CC221363F200A9C0A5 /* MyPlantsCoordinator.xib */; };
 		1ACE74CF22155AA300A9C0A5 /* MyPlantsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE74CE22155AA300A9C0A5 /* MyPlantsCollectionViewCell.xib */; };
 		1ACE74D5221D407700A9C0A5 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE74D4221D407700A9C0A5 /* CoordinatorProtocol.swift */; };
+		1ACE74DA221F509E00A9C0A5 /* MyPlantsSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE74D9221F509E00A9C0A5 /* MyPlantsSnapshotTest.swift */; };
 		AAD68756220306CB00D644AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD68755220306CB00D644AE /* AppDelegate.swift */; };
 		AAD6875D220306CC00D644AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD6875C220306CC00D644AE /* Assets.xcassets */; };
 		AAD68760220306CC00D644AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD6875E220306CC00D644AE /* LaunchScreen.storyboard */; };
@@ -24,6 +25,7 @@
 		AAD6878D2204894000D644AE /* MyPlantsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6878C2204894000D644AE /* MyPlantsCollectionViewCell.swift */; };
 		AAD6878F2204911D00D644AE /* MyPlantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6878E2204911D00D644AE /* MyPlantsTests.swift */; };
 		AAD687912204956C00D644AE /* MyPlantsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD687902204956C00D644AE /* MyPlantsViewModelTests.swift */; };
+		C9A8CF128FEA0C30941E4370 /* Pods_PlantLifeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E02A439C70B70B56DBD4BF /* Pods_PlantLifeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		109391FFBAF0AD770D28005A /* Pods-PlantLifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantLifeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlantLifeTests/Pods-PlantLifeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1ACE74C02212176300A9C0A5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		1ACE74C22212177400A9C0A5 /* AppCoordinatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorModel.swift; sourceTree = "<group>"; };
 		1ACE74C52212184D00A9C0A5 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
@@ -53,6 +56,10 @@
 		1ACE74CE22155AA300A9C0A5 /* MyPlantsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlantsCollectionViewCell.xib; sourceTree = "<group>"; };
 		1ACE74D4221D407700A9C0A5 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		1ACE74D7221D4ADA00A9C0A5 /* TodoList */ = {isa = PBXFileReference; lastKnownFileType = text; path = TodoList; sourceTree = "<group>"; };
+		1ACE74D9221F509E00A9C0A5 /* MyPlantsSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsSnapshotTest.swift; sourceTree = "<group>"; };
+		2F099F243AF236961D90B319 /* Pods-PlantLifeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantLifeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlantLifeTests/Pods-PlantLifeTests.release.xcconfig"; sourceTree = "<group>"; };
+		33E02A439C70B70B56DBD4BF /* Pods_PlantLifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantLifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D93C24BCB031A1F4C57B874 /* Pods_PlantLifeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantLifeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD68752220306CB00D644AE /* PlantLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD68755220306CB00D644AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD6875C220306CC00D644AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A8CF128FEA0C30941E4370 /* Pods_PlantLifeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AC60BA9D98DF0D9415989B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				109391FFBAF0AD770D28005A /* Pods-PlantLifeTests.debug.xcconfig */,
+				2F099F243AF236961D90B319 /* Pods-PlantLifeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1ACE74D022155D8D00A9C0A5 /* MyPlants */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +162,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		62C98DF90C26BE6068D0ABD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D93C24BCB031A1F4C57B874 /* Pods_PlantLifeUITests.framework */,
+				33E02A439C70B70B56DBD4BF /* Pods_PlantLifeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AAD68749220306CB00D644AE = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +178,8 @@
 				AAD68769220306CC00D644AE /* PlantLifeTests */,
 				AAD68774220306CC00D644AE /* PlantLifeUITests */,
 				AAD68753220306CB00D644AE /* Products */,
+				0AC60BA9D98DF0D9415989B9 /* Pods */,
+				62C98DF90C26BE6068D0ABD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				AAD6878E2204911D00D644AE /* MyPlantsTests.swift */,
+				1ACE74D9221F509E00A9C0A5 /* MyPlantsSnapshotTest.swift */,
 				AAD687902204956C00D644AE /* MyPlantsViewModelTests.swift */,
 				AAD6876C220306CC00D644AE /* Info.plist */,
 			);
@@ -221,9 +250,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAD6877D220306CC00D644AE /* Build configuration list for PBXNativeTarget "PlantLifeTests" */;
 			buildPhases = (
+				C2B8198C96F65A1DD329F1F5 /* [CP] Check Pods Manifest.lock */,
 				AAD68762220306CC00D644AE /* Sources */,
 				AAD68763220306CC00D644AE /* Frameworks */,
 				AAD68764220306CC00D644AE /* Resources */,
+				F2CBBA59111A0EE4A699FF8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -325,6 +356,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C2B8198C96F65A1DD329F1F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlantLifeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2CBBA59111A0EE4A699FF8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PlantLifeTests/Pods-PlantLifeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapshotTesting/SnapshotTesting.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapshotTesting.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlantLifeTests/Pods-PlantLifeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AAD6874E220306CB00D644AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -347,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD6878F2204911D00D644AE /* MyPlantsTests.swift in Sources */,
+				1ACE74DA221F509E00A9C0A5 /* MyPlantsSnapshotTest.swift in Sources */,
 				AAD687912204956C00D644AE /* MyPlantsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,8 +619,9 @@
 		};
 		AAD6877E220306CC00D644AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 109391FFBAF0AD770D28005A /* Pods-PlantLifeTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8WVS4WSY7;
@@ -561,8 +641,9 @@
 		};
 		AAD6877F220306CC00D644AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F099F243AF236961D90B319 /* Pods-PlantLifeTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8WVS4WSY7;
@@ -583,7 +664,7 @@
 		AAD68781220306CC00D644AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8WVS4WSY7;
 				INFOPLIST_FILE = PlantLifeUITests/Info.plist;
@@ -603,7 +684,7 @@
 		AAD68782220306CC00D644AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8WVS4WSY7;
 				INFOPLIST_FILE = PlantLifeUITests/Info.plist;
