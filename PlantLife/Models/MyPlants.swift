@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// This represents the Model layer to obtain My Plants data
 class MyPlants: MyPlantsProtocol {
 
   struct Plant {
