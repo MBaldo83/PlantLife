@@ -1,3 +1,4 @@
 Look into the snapshot tests
+Re-enable UI Tests
 Add lint tests
 My Plants view model should not be based on Index Path, but on indices. It is the view that should enforce that there is only 1 section, as it is the view that defines itself to only have 1 section.
