@@ -1,0 +1,15 @@
+<UIView; frame = (0 0; 375 667); autoresize = W+H; layer = <CALayer>>
+   | <UIView; frame = (0 44; 375 623); autoresize = RM+BM; layer = <CALayer>>
+   |    | <UIView; frame = (0 0; 375 623); autoresize = W+H; layer = <CALayer>>
+   |    |    | <UICollectionView; frame = (0 0; 375 623); clipsToBounds = YES; autoresize = RM+BM; gestureRecognizers = <NSArray>; layer = <CALayer>; contentOffset: {0, 0}; contentSize: {375, 200}; adjustedContentInset: {0, 0, 0, 0}> collection view layout: <UICollectionViewFlowLayout>
+   |    |    |    | <PlantLife.MyPlantsCollectionViewCell; baseClass = UICollectionViewCell; frame = (0 0; 375 60); clipsToBounds = YES; opaque = NO; layer = <CALayer>>
+   |    |    |    |    | <UIView; frame = (0 0; 375 60); gestureRecognizers = <NSArray>; layer = <CALayer>>
+   |    |    |    |    |    | <UILabel; frame = (12 12; 148 20.5); text = 'Tradescantia Zebra'; opaque = NO; autoresize = RM+BM; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <PlantLife.MyPlantsCollectionViewCell; baseClass = UICollectionViewCell; frame = (0 70; 375 60); clipsToBounds = YES; opaque = NO; layer = <CALayer>>
+   |    |    |    |    | <UIView; frame = (0 0; 375 60); gestureRecognizers = <NSArray>; layer = <CALayer>>
+   |    |    |    |    |    | <UILabel; frame = (12 12; 40.5 20.5); text = 'Ficus'; opaque = NO; autoresize = RM+BM; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <PlantLife.MyPlantsCollectionViewCell; baseClass = UICollectionViewCell; frame = (0 140; 375 60); clipsToBounds = YES; opaque = NO; layer = <CALayer>>
+   |    |    |    |    | <UIView; frame = (0 0; 375 60); gestureRecognizers = <NSArray>; layer = <CALayer>>
+   |    |    |    |    |    | <UILabel; frame = (12 12; 67.5 20.5); text = 'Calathea'; opaque = NO; autoresize = RM+BM; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UIImageView; frame = (3 617.5; 369 2.5); alpha = 0; opaque = NO; autoresize = TM; userInteractionEnabled = NO; layer = <CALayer>>
+   |    |    |    | <UIImageView; frame = (369.5 637; 2.5 7); alpha = 0; opaque = NO; autoresize = LM; userInteractionEnabled = NO; layer = <CALayer>>

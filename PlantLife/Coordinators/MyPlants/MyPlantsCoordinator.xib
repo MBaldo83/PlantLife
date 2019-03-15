@@ -44,7 +44,7 @@
                 <constraint firstAttribute="trailing" secondItem="mzS-3r-I6W" secondAttribute="trailing" id="xds-Mj-oql"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="-409" y="-12"/>
+            <point key="canvasLocation" x="-410.39999999999998" y="-12.143928035982009"/>
         </view>
     </objects>
 </document>

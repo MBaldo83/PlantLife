@@ -23,4 +23,11 @@ class MyPLantsSnapshotTests: XCTestCase {
     let vc = AppCoordinator()
     assertSnapshot(matching: vc, as: .hierarchy)
   }
+
+  func testAppCoordinatorSnapshotAsRecursiveDescription() {
+
+    let vc = AppCoordinator()
+    assertSnapshot(matching: vc, as: .recursiveDescription)
+  }
+
 }
