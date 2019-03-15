@@ -1,0 +1,8 @@
+.image example
+ - Change the colour of the cell background
+
+.hieracrchy example
+ - Change the name of the AppCoordinator
+
+.recursiveDescription example
+- Add a new empty view behind the collection view

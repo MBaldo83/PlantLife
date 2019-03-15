@@ -18,6 +18,7 @@
 		AA07C9F8223BF332001B0FD2 /* SnapshotTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA07C9F7223BF332001B0FD2 /* SnapshotTesting.framework */; };
 		AA07C9F9223BF387001B0FD2 /* SnapshotTesting.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA07C9F7223BF332001B0FD2 /* SnapshotTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA07C9FB223BF449001B0FD2 /* MyPlantsSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA07C9FA223BF449001B0FD2 /* MyPlantsSnapshotTests.swift */; };
+		AA07C9FD223C14BA001B0FD2 /* DemoSnapshotTestNotes in Resources */ = {isa = PBXBuildFile; fileRef = AA07C9FC223C14BA001B0FD2 /* DemoSnapshotTestNotes */; };
 		AAD68756220306CB00D644AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD68755220306CB00D644AE /* AppDelegate.swift */; };
 		AAD6875D220306CC00D644AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD6875C220306CC00D644AE /* Assets.xcassets */; };
 		AAD68760220306CC00D644AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD6875E220306CC00D644AE /* LaunchScreen.storyboard */; };
@@ -71,6 +72,7 @@
 		1ACE74D7221D4ADA00A9C0A5 /* TodoList */ = {isa = PBXFileReference; lastKnownFileType = text; path = TodoList; sourceTree = "<group>"; };
 		AA07C9F7223BF332001B0FD2 /* SnapshotTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapshotTesting.framework; path = Carthage/Build/iOS/SnapshotTesting.framework; sourceTree = "<group>"; };
 		AA07C9FA223BF449001B0FD2 /* MyPlantsSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsSnapshotTests.swift; sourceTree = "<group>"; };
+		AA07C9FC223C14BA001B0FD2 /* DemoSnapshotTestNotes */ = {isa = PBXFileReference; lastKnownFileType = text; path = DemoSnapshotTestNotes; sourceTree = "<group>"; };
 		AAD68752220306CB00D644AE /* PlantLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD68755220306CB00D644AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD6875C220306CC00D644AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,6 +160,8 @@
 		1ACE74D6221D4AAA00A9C0A5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1ACE74D7221D4ADA00A9C0A5 /* TodoList */,
+				AA07C9FC223C14BA001B0FD2 /* DemoSnapshotTestNotes */,
 				AAD6875C220306CC00D644AE /* Assets.xcassets */,
 				AAD6875E220306CC00D644AE /* LaunchScreen.storyboard */,
 			);
@@ -201,7 +205,6 @@
 				1ACE74D122155DDB00A9C0A5 /* Models */,
 				1ACE74D6221D4AAA00A9C0A5 /* Resources */,
 				AAD68761220306CC00D644AE /* Info.plist */,
-				1ACE74D7221D4ADA00A9C0A5 /* TodoList */,
 			);
 			path = PlantLife;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ACE74C922121E8900A9C0A5 /* AppCoordinator.xib in Resources */,
+				AA07C9FD223C14BA001B0FD2 /* DemoSnapshotTestNotes in Resources */,
 				1ACE74CD221363F200A9C0A5 /* MyPlantsCoordinator.xib in Resources */,
 				AAD68760220306CC00D644AE /* LaunchScreen.storyboard in Resources */,
 				1ACE74CF22155AA300A9C0A5 /* MyPlantsCollectionViewCell.xib in Resources */,
