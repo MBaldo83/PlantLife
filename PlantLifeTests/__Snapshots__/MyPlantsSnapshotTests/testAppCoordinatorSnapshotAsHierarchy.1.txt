@@ -1,0 +1,2 @@
+<PlantLife.AppCoordinator>, state: appearing, view: <UIView>
+   | <PlantLife.MyPlantsCoordinator>, state: appearing, view: <UIView>
